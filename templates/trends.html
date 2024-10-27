@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Emotional Trends</h1>
+        <p>{{ stats }}</p>
+        <img src="{{ url_for('static', filename='trends.png') }}" alt="Trends" class="img-fluid">
+        <a href="/" class="btn btn-link">Back to Home</a>
+    </div>
+</body>
+</html>

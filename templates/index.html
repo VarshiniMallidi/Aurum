@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Analyzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Emotional Analyzer</h1>
+        <form action="/analyze" method="post">
+            <div class="form-group">
+                <label for="text">Enter your text:</label>
+                <textarea class="form-control" id="text" name="text" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Analyze</button>
+        </form>
+        <a href="/trends" class="btn btn-link mt-3">View Trends</a>
+    </div>
+</body>
+</html>

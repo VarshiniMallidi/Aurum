@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Analysis Result</h1>
+        <p><strong>Timestamp:</strong> {{ analysis.timestamp }}</p>
+        <p><strong>Text:</strong> {{ analysis.text }}</p>
+        <p><strong>Mood Score:</strong> {{ analysis.mood_score }}</p>
+        <p><strong>Overall Mood:</strong> {{ analysis.overall_mood }}</p>
+
+        <h3>Detected Emotions</h3>
+        <ul>
+            {% for emotion, intensity in analysis.emotions.items() %}
+                <li>{{ emotion }}: {{ intensity }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/" class="btn btn-link">Analyze More</a>
+        <a href="/trends" class="btn btn-link">View Trends</a>
+    </div>
+</body>
+</html>
